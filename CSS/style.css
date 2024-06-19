@@ -1,0 +1,539 @@
+@font-face {
+    src: url(../Font/Roboto-Light.ttf);
+    font-family: 'Roboto';
+}
+
+@font-face {
+    src: url(../Font/Pattaya-Regular.ttf);
+    font-family: 'Pattaya';
+}
+
+@font-face {
+    src: url(../Font/KoHo-Light.ttf);
+    font-family: 'KoHo';
+}
+
+* {
+    padding: 0;
+    background: none;
+}
+
+body {
+    color: #ffffff;
+    background: #4d4a4a !important;
+    font-family: 'Roboto'!important;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+ ::selection {
+    /*Thay đổi màu nền khi bôi đen văn bản*/
+    background-color: #696969;
+}
+
+
+/*HEADER*/
+
+header {
+    left: 0;
+    top: 0;
+    overflow: visible;
+    position: fixed !important;
+    /*Cố định header và menu khi cuộn trang Web */
+    z-index: 1000;
+    width: 100%;
+    height: 200px;
+    background: rgba(247, 241, 207, 0.945);
+    /* opacity: 0.8; */
+    /*Điều chỉnh độ trong suốt của header*/
+}
+
+#head {
+    width: 95%;
+    height: 170px;
+    margin: auto;
+}
+
+#logo {
+    width: 13%;
+    height: 160px;
+    float: left;
+}
+
+#name-search {
+    width: 35%;
+    height: 160px;
+    float: left;
+    text-align: center;
+}
+
+.h2 {
+    color: red;
+}
+
+h3 {
+    color: white;
+}
+
+.search {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: whitesmoke;
+}
+
+.icon_search {
+    width: 50px;
+    padding: 10px;
+    margin-left: -3px;
+    border-radius: 5px;
+    border: none;
+    background: wheat;
+}
+
+#map {
+    width: 32%;
+    height: 160px;
+    float: left;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.map {
+    font-size: 21px;
+    margin: 45px;
+}
+
+.icon_map {
+    float: left;
+    margin: 50px 10px;
+}
+
+#hotline {
+    width: 20%;
+    height: 160px;
+    float: left;
+}
+
+.hotline {
+    margin: 50px 20px 0 0;
+}
+
+.container-menu {
+    width: 100%;
+    height: 45px;
+}
+
+.container-menu ul {
+    text-align: center;
+    background-color: #696969;
+    font-size: 24px;
+}
+
+.container-menu ul li {
+    display: inline-block;
+}
+
+.container-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 45px;
+    padding: 0 30px;
+    display: inline-block;
+}
+
+.container-menu ul li a.active {
+    background-color: #808080;
+}
+
+.container-menu ul li a:hover {
+    /*a:hover - Thay đổi các thuộc tính khi di chuột tới*/
+    background-color: #808080;
+}
+
+.slider {
+    width: 1200px;
+    height: 450px;
+    margin: 0 10%;
+    margin-top: 215px !important;
+    border-radius: 10px;
+    overflow: hidden;
+    /*ẩn slider*/
+    margin: auto;
+}
+
+.slides {
+    width: 500%;
+    height: 450px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 1200px;
+    height: 450px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 1200px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    /*khoảng cách giữa các nút button*/
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    /*Thay đổi background của button khi di chuột tới*/
+    background: red;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    margin-top: 420px;
+}
+
+.navigation-auto div {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: red;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: red;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: red;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: red;
+}
+
+.main-menu {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+#main {
+    width: 950px;
+    height: auto;
+    margin-left: 30px;
+    float: left;
+    padding: 0;
+}
+
+.thumbnail {
+    width: 220px;
+    height: 330px;
+    padding: 0px;
+    border-radius: 0px;
+    background: none !important;
+}
+
+.caption h4 {
+    color: whitesmoke;
+}
+
+.caption div a {
+    background: #696969;
+    border: none;
+}
+
+.caption div a:hover {
+    background: #808080;
+}
+
+.row div p {
+    color: whitesmoke;
+}
+
+#sidebar {
+    width: 300px;
+    height: 300px;
+    margin-left: 60px;
+    float: left;
+    background: #696969;
+}
+
+.sidebar {
+    list-style: none;
+    padding: 0;
+    background: #696969;
+    width: 300px;
+}
+
+.sidebar li a {
+    display: block;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar li a strong {
+    text-transform: uppercase;
+}
+
+.sidebar li a:hover {
+    background: #808080;
+}
+
+#coppyright {
+    width: 100%;
+    height: 35px;
+    background: #000000;
+    color: #706f6f;
+    font-weight: normal!important;
+}
+
+.coppyright1 {
+    width: auto;
+    height: 100%;
+    float: left;
+    position: relative;
+    padding: 8px 0;
+    left: 2%;
+    font-weight: normal !important
+}
+
+.coppyright2 {
+    width: auto;
+    height: 100%;
+    float: left;
+    position: relative;
+    padding: 8px 0;
+    left: 13%;
+    font-weight: normal !important;
+}
+
+.coppyright3 {
+    width: auto;
+    height: 100%;
+    float: left;
+    position: relative;
+    padding: 8px 0;
+    left: 30%;
+    font-weight: normal!important;
+}
+
+.lh1 {
+    width: 42.77%;
+    height: 356px;
+    margin-left: 81px;
+    float: left;
+    font-size: 20px;
+    color: whitesmoke;
+    border-style: groove;
+    border-color: whitesmoke;
+}
+
+.lh2 {
+    width: 42.77%;
+    height: 356px;
+    margin-left: 30px;
+    float: left;
+    border-style: groove;
+    border-color: whitesmoke;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: #141414;
+    color: white;
+    font-size: 20px;
+    margin: auto;
+    /* margin-top: 1180px; */
+    font-weight: normal !important;
+}
+
+#info {
+    width: 16%;
+    height: 100%;
+    position: relative;
+    left: 3%;
+    top: -1̃70px;
+    /* margin-top: 200px;
+    margin-left: 3%; */
+}
+
+.tlsport {
+    font-size: 32px;
+    color: red;
+}
+
+.tlsport:hover {
+    color: #e65100;
+    text-decoration: none;
+}
+
+.title {
+    color: #eeeeee;
+    position: relative;
+    top: 0px;
+    font-size: 17px
+}
+
+.detail {
+    color: #aaa7a7;
+    font-size: 16px
+}
+
+#link {
+    width: 14%;
+    height: 100%;
+    position: relative;
+    top: -230px;
+    left: 23%;
+    /* margin-top: -210px;
+    margin-left: 23%; */
+}
+
+.link {
+    display: flex;
+    width: 90px;
+    height: 40px;
+    color: #aaa7a7;
+    font-size: 16px;
+    border-top: 2px solid #ffffff;
+    margin-top: -5px;
+}
+
+.link:hover {
+    color: #e65100;
+    text-decoration: none;
+}
+
+#contact {
+    width: 19%;
+    height: 100%;
+    position: relative;
+    top: -480px;
+    left: 33%;
+    /* margin-top: -250px;
+    margin-left: 33%; */
+}
+
+.text {
+    color: #aaa7a7;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+#fanpage {
+    width: 13%;
+    height: 100%;
+    position: relative;
+    top: -730px;
+    left: 51%;
+    /* margin-top: -250px;
+    margin-left: 52%; */
+}
+
+#subscribe {
+    width: 22%;
+    height: 100%;
+    position: relative;
+    top: -980px;
+    left: 77%;
+    /* margin-top: -250px;
+    margin-left: 78%; */
+    /* mấy cái id kh có nè.t có làm gì đâu nhỉ. */
+}
+
+#email {
+    color: #aaa7a7;
+    position: relative;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 300px;
+    border-bottom: 1px solid #aaa7a7;
+    top: 0px;
+}
+
+.submit {
+    background: #696969;
+    margin-top: 15px;
+    border-radius: 3px;
+    border: none;
+}
+
+.submit:hover {
+    background: #808080;
+}
+
+.btn {
+    position: relative;
+    top: -10px
+}
+
+.social {
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
+    color: white;
+}

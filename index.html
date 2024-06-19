@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TLSPORT SHOP</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./IMAGES/shop.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+    <header>
+        <!-- <footer style="position: fixed !important;">
+            <div style="width: 70%; height: 50%; color: whitesmoke; margin:auto; padding: 15px; ">
+                <marquee> TLSPORT SHOP - Shop quần áo thể thao uy tín, giá rẻ tại Đà Nẵng</marquee>
+            </div>
+        </footer> -->
+
+        <div id="head">
+            <div id="logo">
+                <a href="./index.html"><img src="./IMAGES/logo1.png"></a>
+            </div>
+            <div id="name-search">
+                <a style="text-decoration: none;" href="./index.html">
+                    <h2 style="color: rgb(38, 0, 255);">TLSPORT SHOP</h2>
+                </a>
+                <a style="text-decoration: none;" href="./index.html">
+                    <h3 style="color: rgb(2, 40, 255);">Shop Quần Áo Thể Thao Uy Tín</h3>
+                </a>
+                <form>
+                    <input class="search" type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <button type="submit" class="icon_search"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div id="map">
+                <img class="icon_map" src="./IMAGES/icon_map.png">
+                <div class="map">
+                    <a style="text-decoration: none; color: rgb(2, 40, 255);" href="https://www.google.com/maps/place/TLSPORT+SHOP/@15.9802717,108.2364109,188m/data=!3m2!1e3!4b1!4m5!3m4!1s0x31421b13a1c89651:0x93787d9457e638e8!8m2!3d15.9802704!4d108.2369581" target="_blank">Cơ sở 1: Khái Tây 1</a><br>
+                    <a style="text-decoration: none; color: rgb(2, 40, 255);" href="" target="_blank">Cơ sở 2: 470 Trần Đại Nghĩa</a>
+                </div>
+            </div>
+            <div id="hotline">
+                <img src="./IMAGES/phone-icon1.png" class="hotline">
+            </div>
+        </div>
+
+        <div class="container-menu">
+            <ul>
+                <li><a href="index.html" class="active">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="sanpham.html">Sản Phẩm</a></li>
+                <!-- <li><a href="khuyenmai.html">Khuyến mãi</a></li> -->
+                <li><a href="https://www.facebook.com/TLSport.43Shop">Fanpage</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <!-- <li><a href="taikhoan.html">Tài khoản</a></li> -->
+            </ul>
+        </div>
+    </header>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <div class="slide first">
+                <img src="./IMAGES/slide_1.jpg">
+            </div>
+            <div class="slide">
+                <img src="./IMAGES/slide_2.jpg">
+            </div>
+            <div class="slide">
+                <img src="./IMAGES/slide_3.jpg">
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //slide tự động chạy
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+                counter = 1;
+            }
+        }, 4000);
+    </script>
+
+    <div class="main-menu">
+        <div id="sidebar">
+            <ul class="sidebar">
+                <li style="background: #292929;"><a style="border-bottom: 2px solid red;" href=""><strong style="color: red;">Danh mục sản phẩm</strong></a></li>
+                <li><a href="./sanpham.html"><strong>Đồ bóng đá</strong></a></li>
+                <li><a href="./sanpham.html"><strong>Đồ bộ thể thao</strong></a></li>
+                <li><a href="./sanpham2.html"><strong>Giày bóng đá</strong></a></li>
+                <li><a href="./sanpham2.html"><strong>Đồ bóng chuyền nữ</strong></a</li>
+                <li><a href="./sanpham3.html"><strong>Loại khác</strong></a</li>
+                </ul>
+            </div>
+        <div id="main" class="container">
+            <div class="h2">
+                <p>
+                    <h2 style="text-align: left;color: #fff;">SẢN PHẨM NỔI BẬT</h2>
+                    <hr>
+                </p>
+            </div>
+            <div class="col-xs-3 col-lg-3">
+                <div class="thumbnail"> <img class="group list-group-image" src="./IMAGES/adidasnam.jpg" alt="Bộ thể thao nam ADIDAS" width="300">
+                    <div class="caption">
+                        <h4>Bộ thể thao nam ADIDAS</h4>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">350.000đ</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6"> <a class="btn btn-success" href="./adidasnam.html">Chi tiết</a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div style="margin-left: -20px;" class="col-xs-3 col-lg-3">
+        <div class="thumbnail"> <img class="group list-group-image" src="./IMAGES/li-ning.jpg" alt="Bộ thể thao Li-Ning" width="300">
+            <div class="caption">
+                <h4>Bộ thể thao Li-Ning</h4>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p class="lead">140.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6"> <a class="btn btn-success" href="./quanao-LiNing.html">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-left: -20px;" class="col-xs-3 col-lg-3">
+        <div class="thumbnail"> <img class="group list-group-image" src="./IMAGES/dortmund1.jpg" alt="Đồ đá bóng câu lạc bộ Dortmund" width="300">
+            <div class="caption">
+                <h4>Đồ câu lạc bộ Dortmund</h4>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p class="lead"> 250.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6"> <a class="btn btn-success" href="./dortmund.html">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-left: -20px;" class="col-xs-3 col-lg-3">
+        <div class="thumbnail"> <img class="group list-group-image" src="./IMAGES/quan ao gio.jpg" alt="Quần áo gió thể thao" width="300">
+            <div class="caption">
+                <h4>Quần áo gió thể thao</h4>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p class="lead">170.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6"> <a class="btn btn-success" href="./quan-ao-gio.html">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: -15px;" class="col-xs-3 col-lg-3">
+        <div class="thumbnail"> <img class="group list-group-image" src="./IMAGES/t90-cam.jpg" alt="Bộ thể thao T90 cam" width="300">
+            <div class="caption">
+                <h4>Bộ thể thao T90</h4>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p class="lead">160.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6"> <a class="btn btn-success" href="T90.html">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: -15px 0 0 -20px;" class="col-xs-3 col-lg-3">
+        <div class="thumbnail"> <img class="group list-group-image" src="./IMAGES/ao-thun-nam-the-thao-nike-1.jpg" alt="Bộ thể thao Nike" width="300">
+            <div class="caption">
+                <h4>Bộ thể thao Nike</h4>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p class="lead">160.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6"> <a class="btn btn-success" href="./nikenam.html">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: -15px 0 0 -20px;" class="col-xs-3 col-lg-3">
+        <div class="thumbnail"> <img class="group list-group-image" src="./IMAGES/add2.jfif" alt="Bộ thể thao Adidas đen" width="300">
+            <div class="caption">
+                <h4>Bộ thể thao Adidas đen</h4>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p class="lead">340.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6"> <a class="btn btn-success" href="./addden.html">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: -15px 0 0 -20px;" class="col-xs-3 col-lg-3">
+        <div class="thumbnail"> <img class="group list-group-image" src="./IMAGES/bongchuyen nu.jpg" alt="Đồ bóng chuyền nữ blue" width="300">
+            <div class="caption">
+                <h4>Đồ bóng chuyền nữ blue</h4>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p class="lead">180.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6"> <a class="btn btn-success" href="./bongchuyen-blue.html">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: -15px;" class="col-xs-3 col-lg-3">
+        <div class="thumbnail"> <img class="group list-group-image" src="./IMAGES/bongchuyen nu2.jpeg" alt="Đồ bóng chuyền nữ" width="300">
+            <div class="caption">
+                <h4>Đồ bóng chuyền nữ</h4>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p class="lead">150.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6"> <a class="btn btn-success" href="./bongchuyen1.html">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: -15px 0 0 -20px;" class="col-xs-3 col-lg-3">
+        <div class="thumbnail">
+            <img class="group list-group-image" src="./IMAGES/nike-nam1.jpg" alt="Áo thun nam Nike chính hãng width=" 300 ">
+            <div class="caption ">
+                <h4>Áo thun nam Nike</h4>
+                <div class="row ">
+                    <div class="col-xs-12 col-md-6 ">
+                        <p class="lead ">1.100.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 "> <a class="btn btn-success " href="./aonikenam.html ">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: -15px 0 0 -20px; " class="col-xs-3 col-lg-3 ">
+        <div class="thumbnail "> <img class="group list-group-image " src="./IMAGES/giay-da-bong-nam-azi-dbk011-do1.jpg " alt="Giày bóng đá nam AZI DBK " width="300 ">
+            <div class="caption ">
+                <h4>Giày bóng đá AZI DBK</h4>
+                <div class="row ">
+                    <div class="col-xs-12 col-md-6 ">
+                        <p class="lead ">550.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 "> <a class="btn btn-success " href="./giayAZIDBK.html ">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: -15px 0 0 -20px; " class="col-xs-3 col-lg-3 ">
+        <div class="thumbnail "> <img class="group list-group-image " src="./IMAGES/giay-Lining-hong.jpg " alt="Giày bóng đá nam Li-Ning hồng " width="300 ">
+            <div class="caption ">
+                <h4>Giày bóng đá Li-Ning</h4>
+                <div class="row ">
+                    <div class="col-xs-12 col-md-6 ">
+                        <p class="lead ">430.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 "> <a class="btn btn-success " href="./giayLINING.html ">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: -15px; " class="col-xs-3 col-lg-3 ">
+        <div class="thumbnail "> <img class="group list-group-image " src="./IMAGES/Mira05-Red.jpg " alt="Giày bóng đá Mira " width="300 ">
+            <div class="caption ">
+                <h4>Giày bóng đá Mira</h4>
+                <div class="row ">
+                    <div class="col-xs-12 col-md-6 ">
+                        <p class="lead ">499.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 "> <a class="btn btn-success " href="./giayMira.html ">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: -15px 0 0 -20px; " class="col-xs-3 col-lg-3 ">
+        <div class="thumbnail "> <img class="group list-group-image " src="./IMAGES/nike_women_black.jpg " alt="Áo thể thao Nike nữ " width="300 ">
+            <div class="caption ">
+                <h4>Áo thể thao Nike nữ</h4>
+                <div class="row ">
+                    <div class="col-xs-12 col-md-6 ">
+                        <p class="lead ">250.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 "> <a class="btn btn-success " href="./nike-nu1.html ">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: -15px 0 0 -20px; " class="col-xs-3 col-lg-3 ">
+        <div class="thumbnail "> <img class="group list-group-image " src="./IMAGES/nike_women_white.jpg " alt="Áo thun nữ Nike trắng " width="300 ">
+            <div class="caption ">
+                <h4>Áo thun nữ Nike trắng</h4>
+                <div class="row ">
+                    <div class="col-xs-12 col-md-6 ">
+                        <p class="lead ">1.100.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 "> <a class="btn btn-success " href="./aonikenu.html ">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: -15px 0 0 -20px; " class="col-xs-3 col-lg-3 ">
+        <div class="thumbnail "> <img class="group list-group-image " src="./IMAGES/ao-gym-nam1.jpg " alt="Áo tập gym nam " width="300 ">
+            <div class="caption ">
+                <h4>Áo tập gym nam</h4>
+                <div class="row ">
+                    <div class="col-xs-12 col-md-6 ">
+                        <p class="lead ">220.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 "> <a class="btn btn-success " href="./ao-gym-nam1.html ">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: -15px; " class="col-xs-3 col-lg-3 ">
+        <div class="thumbnail "> <img class="group list-group-image " src="./IMAGES/bo_do_bong_chuyen_mz-nu_Do.jpg " alt="Bộ bóng chuyền nữ " width="300 ">
+            <div class="caption ">
+                <h4>Bộ bóng chuyền nữ MZ</h4>
+                <div class="row ">
+                    <div class="col-xs-12 col-md-6 ">
+                        <p class="lead ">250.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 "> <a class="btn btn-success " href="./bongchuyen-MZ.html ">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: -15px 0 0 -20px; " class="col-xs-3 col-lg-3 ">
+        <div class="thumbnail "> <img class="group list-group-image " src="./IMAGES/Copa-dạ quang.jpg " alt="Giày đá bóng Copa dạ quang " width="300 ">
+            <div class="caption ">
+                <h4>Giày Copa dạ quang</h4>
+                <div class="row ">
+                    <div class="col-xs-12 col-md-6 ">
+                        <p class="lead ">590.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 "> <a class="btn btn-success " href="./giayCopa.html ">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: -15px 0 0 -20px; " class="col-xs-3 col-lg-3 ">
+        <div class="thumbnail "> <img class="group list-group-image " src="./IMAGES/gym-nam-asru.jfif " alt="Bộ gym nam ASRU " width="300 ">
+            <div class="caption ">
+                <h4>Bộ gym nam ASRU</h4>
+                <div class="row ">
+                    <div class="col-xs-12 col-md-6 ">
+                        <p class="lead ">259.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 "> <a class="btn btn-success " href="./ao-gym-nam-ASRU.html ">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: -15px 0 0 -20px; " class="col-xs-3 col-lg-3 ">
+        <div class="thumbnail "> <img class="group list-group-image " src="./IMAGES/set-gym-nu.jpg " alt="Bộ đồ tập gym nữ " width="300 ">
+            <div class="caption ">
+                <h4>Bộ đồ tập gym nữ</h4>
+                <div class="row ">
+                    <div class="col-xs-12 col-md-6 ">
+                        <p class="lead ">270.000đ</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 "> <a class="btn btn-success " href="./gym-nu.html ">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <footer style="margin-top: 1280px; ">
+        <div style="width: 16%; height: 100%; position: relative; left: 3%; top: -1̃70px; ">
+            <a class="tlsport " href="./index.html ">TLSPORT Shop</a>
+            <p class="title ">Shop quần áo thể thao uy tín, giá rẻ</p>
+            <p class="detail ">Chúng tôi luôn làm việc với sự quyết tâm hoàn thành công việc cao nhất bằng sự tận tụy và luôn giữ chữ "Tín " đối với khách hàng.</p>
+        </div>
+        
+        <div style="width: 14%; height: 100%; position: relative; top: -230px; left: 23%; ">
+            <p>Liên kết</p>
+            <a class="link " href="./index.html ">Trang chủ</a>
+            <a class="link " href="./gioithieu.html ">Giới thiệu</a>
+            <a class="link " href="./lienhe.html ">Liên Hệ</a>
+            <!-- <a class="link " href="./khuyenmai.html ">Khuyến mãi</a> -->
+        </div>
+        <div style="width: 19%; height: 100%; position: relative; top: -480px; left: 33%; ">
+            <p>Thông tin liên hệ</p>
+            <p class="text ">TLSPORT Shop</p>
+            <p class="text ">Khái Tây 1, TP Đà Nẵng</p>
+            <p class="text ">470 Trần Đại Nghĩa, TP Đà Nẵng</p>
+            <p class="text ">Phone: 037 855 6163</p>
+            <p class="text ">Email: pvlinh.20it9@vku.udn.vn</p>
+        </div>
+        <div style="width: 13%; height: 100%; position: relative; top: -730px; left: 51%; ">
+            <p>Fanpage</p>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTLSport.43Shop%2F&tabs=timeline&width=320&height=140&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId
+                " width="320 " height="140 "
+                style="border:none;overflow:hidden " scrolling="no " frameborder="0 " allowfullscreen="true " allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share "></iframe>
+        </div>
+        <div style="width: 22%; height: 100%; position: relative; top: -980px; left: 77%; ">
+            <p>Đăng ký nhận bảng tin của chúng tôi</p>
+            <form>
+                <input style="color: #aaa7a7; position: relative; background: none; border-top: none; border-right: none; border-left: none; width: 300px; border-bottom: 1px solid #aaa7a7; top: 0px; " type="email " placeholder="Địa chỉ email...
+                " width="300px ">
+                <button class="submit " type="submit ">Đăng ký</button>
+            </form>
+            <p style="margin-top: 10px; ">Kết nối với chúng tôi</p>
+            <i class="fab fa-facebook-square social fa-2x "></i>
+            <i class="fab fa-instagram-square social fa-2x "></i>
+            <i class="fab fa-twitter-square social fa-2x "></i>
+            <i class="fab fa-linkedin social fa-2x "></i>
+        </div>
+    </footer>
+
+    <div style="width: 100%; height: 35px; background: #000000; color: #706f6f; ">
+        <div class="coppyright1 ">
+            <i class="fa fa-phone "></i> +84 378 556 163 &emsp;
+            <i class="fa fa-envelope "></i> pvlinh.20it9@vku.udn,vn
+        </div>
+        <div class="coppyright2 ">Coppyright©2021 TLSPORT Shop All Rights Reserved | Designed by Phan Van Linh</div>
+        <div class="coppyright3 ">
+            <i class="fab fa-facebook-f "></i>&emsp;
+            <i class="fab fa-twitter "></i>&emsp;
+            <i class="fab fa-linkedin-in "></i>&emsp;
+            <i class="fab fa-dribbble "></i>&emsp;
+            <i class="fab fa-google-plus-g "></i>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
